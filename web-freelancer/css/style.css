@@ -40,5 +40,17 @@ body{
   background-color: var(--secundario);
 }
 .navegacion-principal{
-  color: inherit;
+  display: flex;
+  justify-content: space-between;
+}
+.navegacion-principal a{
+  text-decoration: none;
+  color: var(--white);
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 1rem;
+}
+.navegacion-principal a:hover{
+  background-color: var(--primario);
+  color: var(--black);
 }
