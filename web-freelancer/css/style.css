@@ -1,0 +1,44 @@
+:root {
+  /* Color Pallete */
+  --white: #ffffff;
+  --black: #212121;
+  --primario: #FFC107;
+  --secundario: #0097A7;
+  --gris: #757575;
+}
+
+/* Hack 
+html{
+  font-size: 62.5%;
+}
+body{
+  font-size: 16px;
+} 
+Utilizando este Hack hacemos que 1rem = 10px y no solo eso, sino que hace que los rem se adapten mejor en las direntes pantallas de cada dispositivos (smart tv, mobile, smartWatch, laptop, etc...)
+*/
+html{
+  font-size: 62.5%;
+}
+body{
+  font-size: 16px;
+  font-family: 'Krub', sans-serif;
+}
+
+.titulo{
+  text-align: center;
+  font-size: 3.8rem;
+}
+.titulo span{
+  font-size: 2rem;
+  font-style: italic;
+}
+.contenedor{
+  width: 120rem;
+  margin: 0 auto;
+}
+.nav-bg{
+  background-color: var(--secundario);
+}
+.navegacion-principal{
+  color: inherit;
+}
