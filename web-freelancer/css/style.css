@@ -33,7 +33,7 @@ body{
   font-style: italic;
 }
 .contenedor{
-  width: 120rem;
+  max-width: 120rem;
   margin: 0 auto;
 }
 .nav-bg{
@@ -41,7 +41,14 @@ body{
 }
 .navegacion-principal{
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 768px) { /* Screen > 768px */
+  .navegacion-principal{
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 .navegacion-principal a{
   text-decoration: none;
@@ -53,4 +60,10 @@ body{
 .navegacion-principal a:hover{
   background-color: var(--primario);
   color: var(--black);
+}
+
+.hero {
+  background-image: url(../img/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
