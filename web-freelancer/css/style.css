@@ -16,26 +16,62 @@ body{
 } 
 Utilizando este Hack hacemos que 1rem = 10px y no solo eso, sino que hace que los rem se adapten mejor en las direntes pantallas de cada dispositivos (smart tv, mobile, smartWatch, laptop, etc...)
 */
+/* estilos globales */
 html{
   font-size: 62.5%;
+  box-sizing: border-box;
+} *, *::before, *::after {
+  box-sizing: inherit;
 }
 body{
   font-size: 16px;
   font-family: 'Krub', sans-serif;
 }
-
-.titulo{
-  text-align: center;
-  font-size: 3.8rem;
-}
-.titulo span{
-  font-size: 2rem;
-  font-style: italic;
-}
 .contenedor{
   max-width: 120rem;
   margin: 0 auto;
 }
+
+.boton {
+  background-color: var(--secundario);
+  color: var(--white);
+  padding: 1rem 3rem;
+  margin-top: 3rem;
+  font-size: 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  border-radius: .5rem;
+  width: 90%;
+}
+@media (min-width: 768px) {
+  .boton{
+    width: auto;
+  }  
+}
+/* Tipografias */
+
+h1{
+  font-size: 3.8rem;
+}
+h2{
+  font-size: 2.8rem;
+}
+h3{
+  font-size: 1.8rem;
+}
+h1, h2, h3{
+  text-align: center;
+}
+
+/* Titulos  */
+.titulo span{
+  font-size: 2rem;
+  font-style: italic;
+  color: var(--primario);
+}
+/* Navegación Principal */
 .nav-bg{
   background-color: var(--secundario);
 }
@@ -61,9 +97,26 @@ body{
   background-color: var(--primario);
   color: var(--black);
 }
-
+/* Portada */
 .hero {
   background-image: url(../img/hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  height: 450px;
+}
+.contenido-hero{
+  background-color: rgba(0, 0, 0, .6);
+  width: 100%;
+  height: 100%;
+  color: var(--white);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contenido-hero .ubicacion{
+  display: flex;
+  align-items: flex-end;
 }
