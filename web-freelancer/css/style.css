@@ -21,17 +21,17 @@ Utilizando este Hack hacemos que 1rem = 10px y no solo eso, sino que hace que lo
 html{
   font-size: 62.5%;
   box-sizing: border-box;
-  scroll-snap-type: y mandatory;
+/*   scroll-snap-type: y mandatory; */
 } *, *::before, *::after {
   box-sizing: inherit;
 }
 /* control snap */
-.servicios, 
+/* .servicios, 
 .navegacion-principal,
 .formulario {
   scroll-snap-align: center;
   scroll-snap-stop: always;
-}
+} */
 body{
   font-size: 16px;
   font-family: 'Krub', sans-serif;
