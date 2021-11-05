@@ -190,9 +190,6 @@ h3 {
 .bloque {
   text-align: center;
 }
-.bloque__imagen {
-  /* width: 100%; */
-}
 .bloque__titulo {
   margin: 0;
 }
