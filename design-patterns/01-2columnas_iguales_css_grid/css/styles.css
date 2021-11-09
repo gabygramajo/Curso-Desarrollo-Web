@@ -39,3 +39,19 @@ h1 {
 }
 
 /** CODIGO AQUI **/
+@media (min-width: 768px) {
+    .dos-columnas {
+        display: grid;
+        /** op-1 **/
+        grid-template-columns: 50% 50%;
+        /** op-2 **/
+        grid-template-columns: repeat(2, 50%);
+        /** op-3 **/
+        grid-template-columns: 1fr 1fr;
+        /** op-4 **/
+        grid-template-columns: repeat(2, 1fr);
+
+        /* Manipular el espacio entre columnas */
+        column-gap: 2rem;
+    }
+}

@@ -39,3 +39,19 @@ h1 {
 }
 
 /** CODIGO AQUI **/
+@media (min-width: 768px) {
+    /* op-1  | Mayor soporte */
+    .tres-columnas { /** padre **/
+        display: flex;
+        justify-content: space-between;
+    }
+    .entrada-blog { /** hijo **/
+        flex: 0 0 calc((100% / 3) - 2rem);
+    }
+
+    /** op-2 | No todos lo soportan **/
+    .tres-columnas { /** padre **/
+        display: flex;
+        gap: 2rem; 
+    }
+}

@@ -39,3 +39,18 @@ h1 {
 }
 
 /** CODIGO AQUI **/
+@media (min-width: 768px) {
+    .dos-columnas { /* Contenedor Padre */
+        display: flex; 
+        /* op-1 | space-betweem + flex-basis */
+        justify-content: space-between;
+        
+        /** op-2 | puede que no esté soportada en todos los navegadores **/
+        gap: 2rem;
+    }
+    /* op-1 */
+    .entrada-blog { /* Elemento hijo */
+        flex: 0 0 calc( 50% - 1rem);
+        /* Se agrega un flex-basis de 50% y se le resta un 1rem para que tenga 1rem de separación */
+    }
+}

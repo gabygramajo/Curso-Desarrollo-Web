@@ -49,3 +49,18 @@ p {
 
 
 /** CODIGO AQUI **/
+@media (min-width: 768px) {
+    .con-sidebar {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+    } 
+    aside {
+        /** flex-grow maniputala el crecimiento del elemento **/
+        flex-grow: 1;
+    }
+    article {
+        /** El article crecerá x3 más que el aside **/
+        flex-grow: 3;
+    }
+}
