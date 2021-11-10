@@ -17,3 +17,13 @@ Código del curso [Desarrollo Web Completo con HTML5, CSS3, JS AJAX PHP y MySQL]
 - Flexbox.
 - CSS Grid.
 - BEM.
+
+## 3er Proyecto "Blog de Café".
+- https://proyectoweb3-blogdecafe.netlify.app
+### Tecnologías y metodologías utilizadas:
+- HTML.
+- CSS.
+- Flexbox.
+- CSS Grid.
+- BEM.
+- Web Performance & Modernizr.
