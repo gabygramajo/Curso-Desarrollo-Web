@@ -5,11 +5,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BlogDeCafé</title>
-  <link rel="stylesheet" href="css/normalize.css">
+  <!-- prefetch -->
+  <link rel="prefetch" href="cursos.html" as="document">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- preload -->
+  <link rel="preload" href="css/normalize.css" us="style">
+  <link rel="stylesheet" href="css/normalize.css">
+  <!-- preload -->
+  <link rel="preload" href="css/styles.css" us="style">
   <link rel="stylesheet" href="css/styles.css">
+
 </head>
 <body>
 
@@ -41,7 +50,10 @@
 
       <article class="entrada">
         <div class="entrada__imagen">
-          <img src="img/blog1.jpg" alt="imagen blog">
+          <picture>
+            <source loading="lazy" srcset="img/blog1.webp" type="image/webp"> <!-- Op 1 -->
+            <img loading="lazy" src="img/blog1.jpg" alt="imagen blog"> <!-- en caso que la Op 1 no se soporte se cargará esta -->
+          </picture>
         </div>
 
         <div class="entrada__contenido">
@@ -53,7 +65,10 @@
 
       <article class="entrada">
         <div class="entrada__imagen">
-          <img src="img/blog2.jpg" alt="imagen blog">
+          <picture>
+            <source loading="lazy" srcset="img/blog2.webp" type="image/webp"> <!-- Op 1 -->
+            <img loading="lazy" src="img/blog2.jpg" alt="imagen blog"> <!-- en caso que la Op 1 no se soporte se cargará esta -->
+          </picture>
         </div>
 
         <div class="entrada__contenido">
@@ -65,7 +80,10 @@
 
       <article class="entrada">
         <div class="entrada__imagen">
-          <img src="img/blog3.jpg" alt="imagen blog">
+          <picture>
+            <source loading="lazy" srcset="img/blog3.webp" type="image/webp"> <!-- Op 1 -->
+            <img loading="lazy" src="img/blog4.jpg" alt="imagen blog"> <!-- en caso que la Op 1 no se soporte se cargará esta -->
+          </picture>
         </div>
 
         <div class="entrada__contenido">
@@ -118,5 +136,8 @@
       </div>
     </div>
   </footer>
+
+  <!-- modernizr -->
+  <script src="js/modernizr.js"></script>
 </body> 
 </html>
