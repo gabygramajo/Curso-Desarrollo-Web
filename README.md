@@ -3,12 +3,17 @@ Código del curso [Desarrollo Web Completo con HTML5, CSS3, JS AJAX PHP y MySQL]
 
 ## 1er Proyecto "Web Freelancer".
 - https://primerproyecto-webfreelancer.netlify.app
-### Tecnologías:
+### Tecnologías y metodologías utilizadas:
 - HTML.
 - CSS.
+- Flexbox.
+- CSS Grid.
 
 ## 2do Proyecto "FrontEnd Store".
 - https://proyecto2-frontend-store.netlify.app
-### Tecnologías:
+### Tecnologías y metodologías utilizadas:
 - HTML.
 - CSS.
+- Flexbox.
+- CSS Grid.
+- BEM.
