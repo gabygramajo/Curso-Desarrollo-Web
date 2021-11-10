@@ -143,6 +143,8 @@ img {
   font-family: var(--fuenteHeading);
   font-size: 1.8rem;
   font-weight: 700;
+  border: none;
+  cursor: pointer;
 }
 @media (min-width: 768px) {
     .boton {
@@ -210,4 +212,37 @@ img {
 }
 .curso:last-of-type {
   border-bottom: none;
+}
+
+/** Contacto **/
+.contacto-bg {
+  background-image: url(../img/contacto.jpg );
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 40rem;
+}
+
+.formulario {
+  background-color: var(--blanco);
+  width: 95%;
+  margin: -5rem auto 0 auto;
+  padding: 5rem;
+}
+.campo {
+  display: flex;
+  margin-bottom: 2rem;
+}
+.campo__label {
+  flex: 0 0 9rem;
+  text-align: right;
+  padding-right: 2rem;
+}
+
+.campo__field {
+  flex: 1;
+  border: 1px solid var(--gris);
+}
+.campo__field--textarea {
+  height: 20rem;
 }
